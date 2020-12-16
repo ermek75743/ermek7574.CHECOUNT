@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+
+}
+.bg-light{
+    line-height: 1.2;
+    margin: 0;
+    display: flex;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    
+    
+}/*per*/
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    line-height: 1.2rem;
+}
+h2{
+    text-align: center;
+    
+}
+.lead{
+    width: 960px;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+
+
+
+/*osnova*/
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    flex-basis: calc(30% - 10px);
+
+    width: 100%;
+}
+/*your cart*/
+.col-md-4{
+display: flex;
+flex-direction: column;
+width: 372px;
+margin: 0;
+line-height: 1,5rem;
+
+margin: 5px;
+}
+.d-flex{
+    display: flex;
+    justify-content:space-between;
+    font-size: 16px;
+    margin: 0;
+    color: rgb(116, 116, 116);
+    
+}
+.list-group{
+   border: 1px solid darkgray;
+   border-radius: 5px;
+}
+.badge{
+    border-radius: 45%;
+    width: 20px;
+    height: 20px;
+    background-color: darkgray;
+    text-align: center;
+}
+.list-group-item{
+    display: flex;
+    justify-content: space-between;
+    line-height: -20px;
+    border-bottom: 1px solid rgb(102, 100, 100);
+}
+.my-0{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgb(43, 41, 41);
+}
+.text-muted{
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    color: rgb(63, 62, 62);
+    padding-right: 12px;
+    padding-top: 20px;
+}
+
+
+
+
+
+@media(max-width:700px){
+    .row{
+    
+        flex-direction: column;
+        width: 100%;
+        flex-basis: calc(30% - 20px);
+    } 
+}
+
