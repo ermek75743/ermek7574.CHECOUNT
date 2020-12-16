@@ -1,27 +1,37 @@
 *{
     box-sizing: border-box;
+   margin: 0 ;
+    
 }
 body{
     margin: 0;
-    overflow-x: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
 .bg-light{
-    line-height: 1.2;
-    margin: 0;
+     flex: 0 0%;
     display: flex;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0;
-    height: 100%;
+
+    margin: 0 auto;
     
     
-}/*per*/
+    
+}
+.text-center{
+    margin-top: 30px;
+width: 960px;
+}
+/*per*/
 .container {
+    margin-top: 30px;
     max-width: 960px;
     margin: 0 auto;
     line-height: 1.2rem;
+    
 }
 h2{
     text-align: center;
@@ -38,72 +48,169 @@ h2{
 
 /*osnova*/
 .row{
+    
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row-reverse;
-    flex-basis: calc(30% - 10px);
-
+    width: 960px;
     width: 100%;
-}
-/*your cart*/
-.col-md-4{
-display: flex;
-flex-direction: column;
-width: 372px;
 margin: 0;
-line-height: 1,5rem;
+  justify-content: space-evenly;
+height: 100%;;
+}
+@media (max-width:700px){
+    .text-center{
+        flex-wrap: wrap;
+        width: 100%;
+ }
+ .lead{
+     flex-direction: column;
+     width: 100%;
+ }
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    
+}
 
-margin: 5px;
+
+.col-md-4{
+   width: 360px;
+   
 }
 .d-flex{
     display: flex;
-    justify-content:space-between;
-    font-size: 16px;
+    justify-content: space-around;
+    color: rgb(109, 108, 108);
+}
+.text-muted{
+    font-size: 15px;
+    font-weight: 400;
+}
+.badge{
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 40%;
+    width: 20px;
+    height: 20px;
+   text-align: center;
+    background-color: darkgray;
+}
+.list-group-item{
+   border-bottom: 1px solid;
+    line-height: 40px;
     margin: 0;
-    color: rgb(116, 116, 116);
     
 }
 .list-group{
-   border: 1px solid darkgray;
+   width: 360px;
+   border: 1px solid;
    border-radius: 5px;
+   height: 360px;
 }
-.badge{
-    border-radius: 45%;
-    width: 20px;
+/**/
+.input-group-2{
+    display: flex;
+    width: 360px;
+    width: 100%;
+}
+.p-2{
+    display: flex;
+    width: 370px;
+    width: 100%;  
+}
+.form-control{
+    height: 35px;
+    width: 370px;
+    width: 100%;
+    margin: 5px;
+}
+.btn{
+    height: 35px;
+    width: 370px;
+    width: 100%;
+margin-left: -1px;
+}
+.input-group-append{
+  display: flex;
+  justify-content:;
+}
+/**/
+.mb-3{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    
+    
+}
+.append{
+    display: flex;
+    height: 35px;
+    width: 370px;
+    width: 100%; 
+}
+.dog{
+    display: flex;
+    width: 30px;
     height: 20px;
-    background-color: darkgray;
-    text-align: center;
+    border: 1px solid;
+    width: 100%;
 }
-.list-group-item{
+/*ZIP*/
+.col-md-5{
     display: flex;
     justify-content: space-between;
-    line-height: -20px;
-    border-bottom: 1px solid rgb(102, 100, 100);
+    align-items: center;
+    height: 35px;
+    width: 370px;
+    width: 100%; 
 }
-.my-0{
-    font-size: 13px;
-    font-weight: 500;
-    color: rgb(43, 41, 41);
+.custom-select{
+    display: block;
+    height: 35px;
+    width: 370px;
+    width: 100%;  
 }
-.text-muted{
+.btn-primary{
+    margin-top: 5px;
+    color: white;
+    background-color: rgb(51, 51, 221);
+}
+.custom-control{
+    margin-top: 10px;
+   
+}
+.custom-control-input:active{
+      background-color: blue;
+}
+
+
+/*3 atap*/
+.custom-control {
     display: flex;
-    justify-content: space-around;
-    font-size: 13px;
-    color: rgb(63, 62, 62);
-    padding-right: 12px;
-    padding-top: 20px;
 }
+.my-5{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.list-inline{
+    display: flex;
+    justify-content: center;
 
-
-
-
-
-@media(max-width:700px){
-    .row{
+}
+.list-inline-item{
+    display: flex;
+list-style-type: none;
+padding: 20px;
+}
+.mb-1{
+    display: flex;
+    justify-content: center;
     
-        flex-direction: column;
-        width: 100%;
-        flex-basis: calc(30% - 20px);
-    } 
 }
-
+.list-inline .list-inline-item a{
+    text-decoration: none;
+   
+}
